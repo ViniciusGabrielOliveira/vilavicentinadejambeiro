@@ -5,6 +5,16 @@
   font-family: 'Cabin', sans-serif;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  width: 100%;
+}
+
 body {
   background-color: #6290c8;
 }
@@ -36,14 +46,18 @@ body {
   text-align: center;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 50px;
+  gap: 24px;
+}
+
 .about p {
   font-size: 22px;
   text-align: justify;
   margin-bottom: 16px;
-}
-
-figure {
-  width: 100%;
 }
 
 .featured-image img {
@@ -131,11 +145,23 @@ copyright {
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .content {
+    padding: 12px 32px;
+  }
+
   .gallery {
     flex-direction: column;
   }
 
   .featured-image img {
     width: 100%;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .about {
+    padding: 24px 8px;
   }
 }
